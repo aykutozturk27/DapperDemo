@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link href="~/lib/datatables/css/jquery.datatables.min.css" rel="stylesheet" />
+    <link href="~/lib/datatables/css/datatables.bootstrap4.min.css" rel="stylesheet" />
+}
+
+<table id="productTable" style="width:100%"
+       class="table table-responsive table-bordered table-hover">
+    <tr>
+        <th>ProductName</th>
+        <th>UnitPrice</th>
+        <th>UnitsInStock</th>
+        <th>QuantityPerUnit</th>
+    </tr>
+</table>
+
+@section Scripts{
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables/js/datatables.bootstrap4.min.js"></script>
+    <script src="~/js/product.js"></script>
+}
